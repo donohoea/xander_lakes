@@ -64,7 +64,7 @@
         //bind click
         layer.on("click", function(e) {
           const pk = e["target"]["feature"]["properties"]["pk"];
-          addDepthContours(`/contours/${pk}`);
+          addDepthContours(`/contours/${pk}/geojson`);
           const { _northEast, _southWest } = e["target"]["_bounds"];
           const lakeName = e["target"]["feature"]["properties"]["name"];
           console.log(lakeName);
@@ -88,7 +88,7 @@
             "pk.eyJ1IjoiZG9ub2hvZWEiLCJhIjoiY2s1bjJuM3IwMHFiejNrcGZkMDdkMjI3cCJ9.tZiSlH78_0M5q-SYuvC4EA"
         }
       ).addTo(mymap);
-      addGeoJsonLayer("/lakes/");
+      addGeoJsonLayer("/lakes/geojson");
     </script>
   </body>
 </html>

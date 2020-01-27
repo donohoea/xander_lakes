@@ -9,16 +9,16 @@ from .models import Lake, Contour
 class HomePageView(TemplateView):
     template_name = 'lakes/index.html'
 
-class LeafletView(TemplateView):
-    template_name = 'lakes/leaflet.html'
+class LakesView(TemplateView):
+    template_name = 'lakes/lakes.html'
 
 
-def lakes_view(request):
+def lakes_geojson_view(request):
     lakes_as_geojson = serialize('geojson', Lake.objects.all(),
         geometry_field='perimeter', fields=('pk','name',))
     return HttpResponse(lakes_as_geojson)
 
-def contours_view(request, lake_id):
+def contours_geojson_view(request, lake_id):
     contours_as_geojson = serialize('geojson',
         Contour.objects.filter(lake=lake_id), geometry_field='geom',
         fields=('contour','calc_dep_m'));

@@ -1,73 +1,26 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
-    <style>
-      .map {
-        height: 600px;
-        width: 100%;
-      }
-    </style>
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Xander's Lakes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="map" class="map"></div>
+    <nav class='navbar navbar-dark bg-dark'>
+      <a href="#" class='navbar-brand'>Xander's Lakes</a>
+    </nav>
+    <div class="container">
+      <div class="jubotron mx-auto" style="width:800px">
+        <h1>Hi I'm Xander!</h1>
+        <h2>This is my Lakes Page</h2>
+        <img src="static/images/xander.jpg" alt="" width='600px'>
+        <h2>This Page is Still Under Construction</h2>
+        <p>I like lake geography! So when this site is finished it will have
+          <a href="https://en.wikipedia.org/wiki/Bathymetry">bathymetry</a> data for 167 Albertan Lakes.
+        </p>
 
-
-    <script type="text/javascript">
-      var lakesSource = new ol.source.Vector({
-        loader: function(extent, resolution, projection){
-          var url ='{% url 'lakes:lakes' %}';
-          var xhr = new XMLHttpRequest();
-          xhr.open('GET', url);
-          var onError = function() {
-            lakesSource.removeLoadedExtent(extent);
-          }
-          xhr.onerror = onError;
-          xhr.onload = function() {
-            if (xhr.status == 200) {
-              console.log(xhr.responseText);
-              lakesSource.addFeatures(
-                  lakesSource.getFormat().readFeatures(xhr.responseText));
-              console.log(lakesSource.getFeatures())
-            } else {
-              onError();
-            }
-          }
-          xhr.send();
-        },
-        format: new ol.format.GeoJSON({dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'}),
-      });
-
-      var lakesLayer = new ol.layer.Vector({
-        className: 'lakes-layer',
-        source: lakesSource,
-        zIndex: 1,
-        style: new ol.style.Style({
-          stroke: new ol.style.Stroke({
-            color: 'blue',
-            width: 1,
-          })
-        })
-      });
-
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          }),
-          lakesLayer,
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([-123.96, 54.17]),
-          zoom: 5
-        })
-      });
-      map.set
-    </script>
+      </div>
+    </div>
   </body>
 </html>

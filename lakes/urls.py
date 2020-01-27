@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import HomePageView, LeafletView, lakes_view, contours_view
+from .views import HomePageView, LakesView, lakes_geojson_view, contours_geojson_view
 
 app_name = 'lakes'
 
 urlpatterns = [
     path('',HomePageView.as_view(), name='home'),
-    path('leaflet/', LeafletView.as_view(), name='leaflet'),
-    path('lakes/', lakes_view, name='lakes'),
-    path('contours/<int:lake_id>/', contours_view, name='contours'),
+    path('lakes/', LakesView.as_view(), name='lakes'),
+    path('lakes/geojson', lakes_geojson_view, name='lakes'),
+    path('contours/<int:lake_id>/geojson', contours_geojson_view, name='contours'),
 ]
