@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<metadata>
+<idinfo>
+  <citation>
+    <citeinfo>
+      <origin>Alberta Environment</origin>
+      <origin>Energy Resources Conservation Board</origin>
+      <origin>Alberta Geological Survey</origin>
+      <pubdate>2008</pubdate>
+      <title>Battle Lake, Alberta - Bathymetry (GIS data, line features)</title>
+      <geoform>vector digital data</geoform>
+      <serinfo>
+        <sername>Digital Data</sername>
+        <issue>DIG 2008-0543</issue>
+      </serinfo>
+      <pubinfo>
+        <pubplace>Edmonton, Alberta, Canada</pubplace>
+        <publish>Alberta Geological Survey</publish>
+      </pubinfo>
+      <onlink>http://www.ags.gov.ab.ca/publications/DIG/ZIP/DIG_2008_0543.zip</onlink>
+    </citeinfo>
+  </citation>
+  <descript>
+    <abstract>All available bathymetry and related information for Battle Lake were collected and hard copy maps digitized where necessary. The data were validated against more recent data (Shuttle Radar Topography Mission &apos;SRTM&apos; imagery and Indian Remote Sensing &apos;IRS&apos;  imagery) and corrected where necessary. The published data set contains the lake bathymetry formatted as an Arc ascii grid. Bathymetric contours and the boundary polygon are available as shapefiles.</abstract>
+    <purpose>This dataset was created to preserve historical data for Battle Lake and to make the data available in digital form.</purpose>
+    <supplinf>Language: In English</supplinf>
+  </descript>
+  <timeperd>
+    <timeinfo>
+      <sngdate>
+        <caldate>2008</caldate>
+      </sngdate>
+    </timeinfo>
+    <current>publication date</current>
+  </timeperd>
+  <status>
+    <progress>Complete</progress>
+    <update>None planned</update>
+  </status>
+  <spdom>
+    <bounding>
+      <westbc>-114.244131</westbc>
+      <eastbc>-114.141699</eastbc>
+      <northbc>52.98617</northbc>
+      <southbc>52.948736</southbc>
+    </bounding>
+  </spdom>
+  <keywords>
+    <theme>
+      <themekt>none</themekt>
+      <themekey>bathymetry</themekey>
+      <themekey>dem</themekey>
+      <themekey>gis data</themekey>
+      <themekey>lakes</themekey>
+    </theme>
+    <theme>
+      <themekt>ISO 19115 Topic Category</themekt>
+      <themekey>geoscientificInformation</themekey>
+    </theme>
+    <place>
+      <placekt>none</placekt>
+      <placekey>83b</placekey>
+      <placekey>alberta</placekey>
+      <placekey>battle lake</placekey>
+      <placekey>canada</placekey>
+    </place>
+  </keywords>
+  <accconst>Public</accconst>
+  <useconst>Acknowledgement of the Alberta Energy Regulator/Alberta Geological Survey as the originator/source of this information is required as described in the Open Government License - Alberta.</useconst>
+  <ptcontac>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </ptcontac>
+  <datacred>Alberta Environment and the Alberta Geological Survey for supporting the project; GISmo Solutions Ltd. for creating the digital product from the hard copy maps and other data sources.</datacred>
+  <native>Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 4; ESRI ArcCatalog 8.3.0.800</native>
+  <crossref>
+    <citeinfo>
+      <origin>Alberta Environment</origin>
+      <origin>Energy Resources Conservation Board</origin>
+      <origin>Alberta Geological Survey</origin>
+      <pubdate>2008</pubdate>
+      <title>Battle Lake, Alberta - Bathymetry, Digital Elevation Model (Arc ascii grid format)</title>
+      <geoform>raster digital data</geoform>
+      <serinfo>
+        <sername>Digital Data</sername>
+        <issue>DIG 2008-0374</issue>
+      </serinfo>
+      <pubinfo>
+        <pubplace>Edmonton, Alberta, Canada</pubplace>
+        <publish>Alberta Geological Survey</publish>
+      </pubinfo>
+      <onlink>http://www.ags.gov.ab.ca/publications</onlink>
+    </citeinfo>
+  </crossref>
+  <crossref>
+    <citeinfo>
+      <origin>Alberta Environment</origin>
+      <origin>Energy Resources Conservation Board</origin>
+      <origin>Alberta Geological Survey</origin>
+      <pubdate>2008</pubdate>
+      <title>Battle Lake, Alberta - Boundary (GIS data, polygon features)</title>
+      <geoform>vector digital data</geoform>
+      <serinfo>
+        <sername>Digital Data</sername>
+        <issue>DIG 2008-0712</issue>
+      </serinfo>
+      <pubinfo>
+        <pubplace>Edmonton, Alberta, Canada</pubplace>
+        <publish>Alberta Geological Survey</publish>
+      </pubinfo>
+      <onlink>http://www.ags.gov.ab.ca/publications</onlink>
+    </citeinfo>
+  </crossref>
+</idinfo>
+<dataqual>
+  <logic>Polylines represent bathymetry contours and do not cross or overlap. It is not known whether the lines have directionality, i.e. if they were digitized in a standard direction with respect to the lake shorelines or centres.</logic>
+  <complete>Unknown.</complete>
+  <lineage>
+    <procstep>
+      <procdesc>The bathymetry for Battle Lake was digitized. The original bathymetry was recorded as elevations in metres. The original boundary for the lake was retained. The &apos;Reshape&apos; feature of ArcMap was used to adjust contours so as to fit inside the lake boundary. The water level of the lake was set to 835.8m (from the Base Features data). This value was confirmed by data from the most recent data sources.</procdesc>
+      <procdate>2004</procdate>
+    </procstep>
+    <procstep>
+      <procdesc>The lake bathymetry shapefile data tables supplied by the digitizing contractor contained a wide variety of differently named attributes. In spring 2008, Alberta Geological Survey standardized these data into two fields: CONTOUR and CALC_DEP_M (see Entity and Attribute section of this metadata). At that time data were also checked and corrected and/or calculated as required.</procdesc>
+      <procdate>2008</procdate>
+    </procstep>
+  </lineage>
+</dataqual>
+<spdoinfo>
+  <direct>Vector</direct>
+  <ptvctinf>
+    <sdtsterm>
+      <sdtstype>String</sdtstype>
+      <ptvctcnt>52</ptvctcnt>
+    </sdtsterm>
+  </ptvctinf>
+</spdoinfo>
+<spref>
+  <horizsys>
+    <planar>
+      <planci>
+        <plance>coordinate pair</plance>
+        <plandu>METER</plandu>
+        <coordrep>
+          <absres>0.000000</absres>
+          <ordres>0.000000</ordres>
+        </coordrep>
+      </planci>
+      <mapproj>
+        <mapprojn>Transverse Mercator</mapprojn>
+        <transmer>
+          <sfctrmer>0.999200</sfctrmer>
+          <longcm>-115.000000</longcm>
+          <latprjo>0.000000</latprjo>
+          <feast>500000.000000</feast>
+          <fnorth>0.000000</fnorth>
+        </transmer>
+      </mapproj>
+    </planar>
+    <geodetic>
+      <horizdn>North_American_Datum_1983</horizdn>
+      <ellips>Geodetic Reference System of 1980</ellips>
+      <semiaxis>6378137.000000</semiaxis>
+      <denflat>298.257222</denflat>
+    </geodetic>
+  </horizsys>
+</spref>
+<eainfo>
+  <detailed>
+    <enttyp>
+      <enttypl>batt_bcon_ln_tm.dbf</enttypl>
+    </enttyp>
+    <attr>
+      <attrlabl>CONTOUR</attrlabl>
+      <attrdef>Bathymetry contour elevation value, in metres</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>436</rdommin>
+          <rdommax>1706</rdommax>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>CALC_DEP_M</attrlabl>
+      <attrdef>Depth below lake surface/datum in metres; calculated value</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>-0.2</rdommin>
+          <rdommax>152</rdommax>
+        </rdom>
+      </attrdomv>
+    </attr>
+  </detailed>
+  <overview>
+    <eaover>Attributes describe the depth and elevation values for bathymetry contour. Range domains given are the extreme maxima and minima found for 169 Alberta lakes.</eaover>
+  </overview>
+</eainfo>
+<distinfo>
+  <distrib>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </distrib>
+  <distliab>The Alberta Energy Regulator/Alberta Geological Survey (AER/AGS) licenses this information under the Open Government License - Alberta. Any references to proprietary software in our documentation, and/or any use of proprietary data formats in our releases, do not constitute endorsement by the AER/AGS of any manufacturer&apos;s product.</distliab>
+</distinfo>
+<metainfo>
+  <metd>20131107</metd>
+  <metc>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </metc>
+  <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+  <metstdv>FGDC-STD-001-1998</metstdv>
+  <mettc>local time</mettc>
+  <metac>none</metac>
+  <metuc>none</metuc>
+</metainfo>
+</metadata>
