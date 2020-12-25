@@ -1,4 +1,4 @@
-FROM kartoza/postgis:9.6–2.4
+FROM kartoza/postgis
 VOLUME “/data”
 ENV POSTGRES_USER=user001
 ENV POSTGRES_PASS=123456789

@@ -1,19 +1,19 @@
 version: "2"
 services:
   backend:
-    build:
-    context: "./backend"
+    build: .
     ports:
-      - 8000:8000
-    command: python3 -u manage.py runserver 0.0.0.0:8000
+      - 8080:8080
+    command: bash -c "
+      python3 -u backend/manage.py wait_for_db &&
+      python3 -u backend/manage.py migrate &&
+      python3 -u backend/load.py run &&
+      python3 -u backend/manage.py runserver 0.0.0.0:8080"
     network_mode: host
-    depends_on:
-      - database
-
+    depends_on: [database]
   database:
     container_name: database
-    build:
-    context: "./database"
+    build: ./database
     ports:
       - 5432:5432
     network_mode: host
