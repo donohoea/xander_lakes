@@ -6,6 +6,7 @@ services:
       - 8080:8080
     command: bash -c "
       python3 -u backend/manage.py wait_for_db &&
+      python3 -u backend/manage.py sqlflush &&
       python3 -u backend/manage.py migrate &&
       python3 -u backend/load.py run &&
       python3 -u backend/manage.py runserver 0.0.0.0:8080"
