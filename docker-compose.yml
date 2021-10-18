@@ -10,11 +10,9 @@ services:
       python3 -u backend/manage.py migrate &&
       python3 -u backend/load.py run &&
       python3 -u backend/manage.py runserver 0.0.0.0:8080"
-    network_mode: host
     depends_on: [database]
   database:
     container_name: database
     build: ./database
     ports:
       - 5432:5432
-    network_mode: host
