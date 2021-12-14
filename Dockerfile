@@ -9,4 +9,5 @@ RUN pip install -r requirements.txt
 RUN npm install ./frontend
 RUN bash ./clean.sh
 RUN bash ./build.sh
+RUN python3 -u backend/manage.py runserver 0.0.0.0:8080
 EXPOSE 8080
