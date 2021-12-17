@@ -25,7 +25,7 @@ FRONTEND_DIR = os.path.abspath(os.path.join(BACKEND_DIR, '..', 'frontend'))
 SECRET_KEY = 'd8^@=16ios0dprrmix)2r3@n!f#q0n=!4%ibl32mx2@ge^mz6ji9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =  False
+DEBUG =  True
 
 ALLOWED_HOSTS = ['*']
 
