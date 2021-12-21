@@ -1,7 +1,32 @@
+body {
+    background-color: #143A85;
+}
 .scrollable {
   height: 100vh;
   overflow-y: scroll;
 }
 .fixed-height {
   height: 100vh;
+}
+
+.container{
+  height: 100vh;
+}
+
+.center {
+  width: 20%;
+  margin: auto;
+  display: block;
+}
+
+.title {
+  width: 20%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  color: #91ABDF
+}
+
+.buffer{
+  height: 20%;
 }

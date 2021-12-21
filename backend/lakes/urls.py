@@ -4,7 +4,7 @@ from .views import HomePageView, LakesView, catchall, lakes_list_view, lakes_geo
 app_name = 'lakes'
 
 urlpatterns = [
-    path('',HomePageView.as_view(), name='home'),
+    #path('',HomePageView.as_view(), name='home'),
     path('lakes/', LakesView.as_view(), name='lakes'),
     path('lakes/list', lakes_list_view, name='lakes_list'),
     path('lakes/geojson', lakes_geojson_view, name='lakes_geojson'),
