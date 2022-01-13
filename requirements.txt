@@ -19,7 +19,7 @@ Faker==2.0.2
 idna==2.8
 lxml==4.6.5
 misaka==2.1.1
-numpy==1.18.1
+numpy==1.21.0
 Pillow==9.0.0
 postgis==1.0.4
 psycopg2==2.8.4
